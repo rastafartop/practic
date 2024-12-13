@@ -1,0 +1,15 @@
+{
+    "name": "user/practic",
+    "authors": [
+        {
+            "name": "User",
+            "email": "test@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Photos\\": ""
+        }
+    }
+}

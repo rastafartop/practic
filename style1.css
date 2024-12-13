@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  color: #fff;
+  background: #1d1d1d;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+}
+header {
+  display: flex;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 5px #fff;
+  position: sticky;
+  top: 0;
+  background: #fff;
+}
+header a {
+  margin: 0 1rem;
+  color: #000;
+  text-decoration: none;
+}
+h1 {
+  margin: 1rem;
+}
+#grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+.photo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.photo p {
+  text-align: center;
+}
+.mobile_icon {
+  display: none;
+}
+
+.popup {
+  display: flex;
+  gap: 15px;
+}
+
+#add_new_photo {
+  position: fixed;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(29, 29, 29, 0.5);
+  display: none;
+}
+#add_new_photo.open {
+  display: flex;
+}
+#add_new_photo form {
+  width: 80%;
+  border: 2px solid #1d1d1d;
+  background: #fff;
+  border-radius: 5px;
+  padding: 1rem;
+}
+#add_new_photo input {
+  padding: 0.5rem;
+  display: block;
+  margin-bottom: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+#add_new_photo button {
+  padding: 0.5rem;
+}
+
+#add_new_photo input.error {
+  border-color: red;
+}
+#popup_photo.open {
+  display: flex;
+}
+#popup_photo img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+#popup_photo {
+  position: fixed;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(29, 29, 29, 0.5);
+  display: none;
+}
+
+.form {
+  width: 50%;
+  margin: 3rem auto;
+}
+
+.form input {
+  padding: 0.5rem;
+  display: block;
+  margin-bottom: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form button {
+  padding: 0.5rem;
+}
+.form .error{
+  color: red;
+  font-weight: bold;
+}
+.form .success{
+  color: green;
+  font-weight: bold;
+}
+
+.photo{
+  color: #fff;
+  text-decoration: none;
+}
+
+#image img{
+  max-width: 100%;
+  max-height: 80vh;
+  display: block;
+  margin: 1rem auto;
+
+}
+
+#image h1 , image p{
+  padding: 0 3rem;
+  box-sizing: border-box;
+  margin: 1rem 0 ;
+}
+.comments {
+  margin-top: 3rem;
+}
+
+.comments h2 {
+  padding: 0 1rem;
+}
+
+.comment {
+  border: 2px solid #fffa;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 90%;
+  margin: 1rem auto;
+}
+
+.comment p {
+  padding: 0;
+}
+
+.comment .author {
+  font-weight: bold;
+}
+
+.comment .text {
+  font-size: 1.25rem;
+}
+.comment .date{
+  font-size: .9rem;
+}
+.comments .form{
+  width: 90%;
+}
+.comments .form textarea{
+  padding: .5rem;
+  display: block;
+  margin-bottom: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
